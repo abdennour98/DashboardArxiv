@@ -1,0 +1,86 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arxiv Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='barstyle11.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styledash.css') }}">
+</head>
+<body >
+<div id="main">
+	<nav>   
+		<ul>
+			<li><a href="contact"><i class="fa fa-envelope"></i>Contact</a></li>
+			<li><a href="about"><i class="fa fa-graduation-cap"></i>About</a></li>
+            <li><a href="home"><i class="fa fa-home"></i>Home</a></li>
+		</ul>
+    </nav>  
+</div>
+<div>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+<div  > 
+    <div class = "row"> 
+        <div class = "col-md-6"> 
+    
+            <div class = "chart" id = "bargraph" > 
+                <div class=" bar1"><h5 class="titre1" style="color: #306887;" >The evolution of published and uptated articles</h5></div> 
+
+                <div  class="border1"></div> 
+                <script>
+                    
+                    var graphs = {{plot1 | safe}};
+                    Plotly.plot('bargraph',graphs,{});
+                </script>
+                
+            </div> 
+                <script>
+                    
+                    var graphs = {{plot2 | safe}};
+                    Plotly.plot('bargraph',graphs,{});
+                </script>
+                
+            </div> 
+    </div> 
+</div> <br>
+<div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+<div  class="bar7">
+   
+    <div class="border3" style="position:absolute;bottom:0px;left:0px;border-style:solid;background-color: rgba(234, 237, 243, 0.384);padding-left: 0px;padding-right: 0px;width:600px;height: 60px;border-color:rgba(234, 237, 243, 0.384);border-width: 0px;"></div>
+    
+    
+   <canvas id="chart"></canvas>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<div id="pie" style="position:absolute;left:1px;top:1px;width:580px;height:400px" >
+    <div style="color:rgb(26, 24, 24);position:absolute;top:0px;left:0px;border-style:solid;background-color: rgba(234, 237, 243, 0.384);width:600px;height: 40px;border-color:rgba(234, 237, 243, 0.384);border-width: 0px;padding-top:15px;"><h5  style="position:absolute;left:240px; color: #306887;"> Top 10 categories</h5></div>
+    <div style="position:absolute;bottom:0px;left:h5;border-style:solid;background-color: rgba(234, 237, 243, 0.384);padding-left: 0px;padding-right: 0px;width:600px;height: 60px;border-color:rgba(234, 237, 243, 0.384);border-width: 0px;"></div>
+   <script>
+      var data = {{ graph_values|safe }};
+      layout = {{ layout|safe }};
+      Plotly.newPlot('pie', data, layout);
+    </script>
+    </div>
+</div>
+</div>
+<div class="bar3">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style28.css') }}">
+    <div class="border2"><h5 class="titre2" style="color: #306887;"> Top 10 authors</h5></div>
+    <div class="bar4"> </div>
+</div>
+    <div class="page">
+      {% for table in tables %}
+        {{ table|safe }}
+      {% endfor %}
+    </div>
+</div>
+<div class = "wordcloud"  align="middle"> 
+    <div class="bar5"></div>
+    <div class="bar6"><h5 class="titre3" style="color: #306887;"> Famous words</h5></div>
+    <img class="image" src="{{url_for('static', filename='wordcloud.png')}}" align="middle" />
+</div>
+<div class="TitreDashboard"><strong>Dashboard arXiv</strong></div>
+</body>
+</html>

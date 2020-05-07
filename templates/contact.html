@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CONTACT</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='contactstyle.css') }}">
+</head>
+<body>
+	<nav>
+        <img src="../static/ensias.png" width="61">
+		<ul>
+			<li><a href="home">Home</a></li>
+			<li><a href="about">About</a></li>
+			<li><a href="contact">Contact</a></li>
+		</ul>
+    </nav>
+    <div class="title">
+        <h1>CONTACT US</h1>
+        <h2>WE ARE READY TO LEAD YOU INTO THE FUTURE</h2>
+    </div>
+    <div class="box">
+        <form>
+            <input type="text" name="name" class="from-control" placeholder="Enter Your Name" style="color: white;" required><br>
+            <input type="email" name="email" class="from-control" placeholder="Enter Your Email" required><br>
+            <textarea name="message" class="form-control" placeholder="Message" rows="10"  required></textarea><br>
+            <input type="submit" name="" class="form-control submit" value="SEND MESSAGE">
+        </form>
+    </div>
+</body>
+</html>
