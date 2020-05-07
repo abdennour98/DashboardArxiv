@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+}
+
+nav ul li{list-style-type:none;}
+nav ul li a{font-family:helvetica; text-decoration:none; }
+nav{
+  width: 100%;
+  background:#306887;
+  /*padding-top:3px;*/
+  border-radius:3px;
+  line-height: 50px;
+  height: 50px;
+}
+
+/* styling main topbar */
+nav ul{
+  height:2.6em;
+  background:#306887;
+  border-radius:3px;
+}
+/* important to keep submenu at their position *
+nav ul li{position:relative;}
+/*styling topbar navigation items */
+nav ul li{
+  float:right;
+  /*border-right:1px solid #fff;*/
+  height:100%;
+  line-height:2.6em;
+  position: relative;
+  padding-right: 30px;
+  padding: 5px 30px;
+}
+nav ul li:hover{
+  background:skyblue;
+	transition:.3s background ease-in-out;
+}
+nav ul li a{
+  display:block;
+  color:#ecf0f1;
+}
+graphe1{
+      border-radius: 10px;
+}

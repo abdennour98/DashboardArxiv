@@ -1,0 +1,180 @@
+body{
+
+    background-color: rgba(234, 237, 243, 0.384);
+}
+.chart{
+
+    color: rgba(234, 237, 243, 0.384) ; 
+     border-radius: 10px;
+     width: 600px;
+     height: 400px;
+      display: inline-block;
+       border-width:1px;
+        border-style:solid;
+        border-color:rgb(54, 184, 184) ;
+        position : absolute;
+         top:60px;
+         left:50px;
+}
+.bar1{
+    color:rgb(26, 24, 24);
+    position:absolute;
+    top:0px;left:0px;
+    border-style:solid;
+    background-color: rgba(234, 237, 243, 0.384);
+    width:600px;height: 40px;
+    border-color:rgba(234, 237, 243, 0.384);
+    border-width: 0px;
+    padding-top:15px;
+}
+.border1{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    border-style:solid;
+    background-color: rgba(234, 237, 243, 0.384);
+    padding-left: 0px;
+    padding-right: 0px;
+    width:600px;
+    height: 60px;
+    border-color:rgba(234, 237, 243, 0.384);
+    border-width: 0px;
+}
+.titre1{
+    position:absolute;
+    left:160px;
+}
+.chartPie{
+    color: rgba(234, 237, 243, 0.384) ;
+      border-radius: 10px;
+      width: 600px;
+      height: 400px;
+       display: inline-block; 
+       border-width:1px;
+        border-style:solid;
+        border-color:rgb(54, 184, 184) ;
+        position : absolute;
+         top:60px;
+         left:700px;
+         background-color: white;
+}
+.bar3{
+    color: rgba(234, 237, 243, 0.384) ;  
+    border-radius: 10px;
+    width: 600px;
+    height: 400px;
+     display: inline-block;
+      border-width:1px;
+       border-style:solid;
+       border-color:rgb(54, 184, 184) ;
+       position : absolute;
+        top:500px;
+        left:50px;
+         background-color: white;
+}
+.border2{
+    color:rgb(26, 24, 24);
+    position:absolute;
+    top:0px;
+    left:0px;
+    border-style:solid;
+    background-color: rgba(234, 237, 243, 0.384);
+    width:600px;
+    height: 35px;
+    border-color:rgba(234, 237, 243, 0.384);
+    border-width: 0px;
+    padding-top:15px;
+}
+.titre2{
+    position:absolute;
+    left:240px;
+}
+.bar4{
+    color:rgb(26, 24, 24);
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    border-style:solid;
+    background-color: rgba(234, 237, 243, 0.384);
+    width:600px;
+    height: 40px;
+    border-color:rgba(234, 237, 243, 0.384);
+    border-width: 0px;
+    padding-top:15px;
+}
+.page{
+    position:absolute;
+    top:550px;
+    left:200px;
+    width: 400px;
+    height:250px;
+}
+.wordcloud{
+    color: rgba(234, 237, 243, 0.384) ;
+      border-radius: 10px;
+      width: 600px;
+      height: 400px;
+       display: inline-block;
+        border-width:1px; 
+        border-style:solid;
+        border-color:rgb(54, 184, 184) ;
+        position : absolute; 
+        top:500px;
+        left:700px;
+        background-color: white;
+}
+.bar5{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    border-style:solid;
+    background-color: rgba(234, 237, 243, 0.384);
+    padding-left: 0px;
+    padding-right: 0px;
+    width:600px;
+    height: 35px;
+    border-color:rgba(234, 237, 243, 0.384);
+    border-width: 0px;
+}
+.bar6{
+    color:rgb(26, 24, 24);
+    position:absolute;
+    top:0px;
+    left:0px;
+    border-style:solid;
+    background-color: rgba(234, 237, 243, 0.384);
+    width:600px;
+    height: 35px;
+    border-color:rgba(234, 237, 243, 0.384);
+    border-width: 0px;
+    padding-top:15px;
+}
+.titre3{
+    position:absolute;
+    left:240px;
+}
+.image{
+    position:absolute;
+    left:50px;
+    top:50px;
+}
+.TitreDashboard{
+    position:absolute;
+    top:18px;
+    left:120px;
+    color:white;
+}
+.bar7{
+    color: rgba(234, 237, 243, 0.384) ; 
+     border-radius: 10px;
+     width: 600px;
+     height: 400px; 
+     display: inline-block;
+      border-width:1px;
+       border-style:solid;
+       border-color:rgb(54, 184, 184) ;
+       position : absolute; 
+       top:60px;
+       left:700px;
+       background-color: white;
+}
