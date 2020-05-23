@@ -9,8 +9,8 @@ import pandas as pd
 import numpy as np
 from wordcloud import WordCloud,STOPWORDS
 from matplotlib import pyplot as plt
-import time
 import json
+import os
 
 #function that returns a list of the authors
 def namess(dfa):
@@ -251,7 +251,7 @@ def send():
                 r20 = r20 +'%20'
             else:
                 r20 = r20 + i 
-        r = requests.get('http://export.arxiv.org/api/query?search_query=all:'+r20+'&start=0&max_results=500')
+        r = requests.get('http://export.arxiv.org/api/query?search_query=all:'+r20+'&start=0&max_results=1000')
         xml = r.text
         doc=xmltodict.parse(xml)
         data = pd.DataFrame(doc)
@@ -347,5 +347,5 @@ def about():
 
 
 if __name__ =='__main__':
-    app.debug = True
-    app.run()
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
